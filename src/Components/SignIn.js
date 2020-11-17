@@ -70,9 +70,10 @@ function SignIn() {
                 <div className="sign-in-form" >
                     <img src={logo} className="kids-loop-logo" alt="kids-loop-logo" />
                     <h2 className='title' >Sign In</h2>
-                    <form className='sign-in-form-main' ref={formRef}>
+                    <form className='sign-in-form-main' ref={formRef} autoComplete="on" >
                         <div className="form-error" >{info.email.error && "Invalid Email"}</div>
                         <input
+                            autoComplete="username"
                             className="sign-in-inputs"
                             type = 'email'
                             name = 'email'
@@ -86,6 +87,7 @@ function SignIn() {
                         />
                         <div className="form-error" >{info.password.error && "Invalid Password"}</div>
                         <input
+                            autoComplete="new-password"
                             className="sign-in-inputs"
                             type = 'password'
                             name = 'password'
