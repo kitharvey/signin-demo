@@ -50,6 +50,12 @@ a{
     text-decoration: none;
 }
 
+.go-back{
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
 .sign-in-background{
     display: flex;
     align-items: center;
@@ -74,6 +80,9 @@ a{
                 color: tomato;
                 font-size: 12px;
                 height: 14px;
+                p{
+                    margin: 0;
+                }
             }
 
             .title{

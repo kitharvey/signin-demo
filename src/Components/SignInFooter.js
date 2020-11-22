@@ -16,7 +16,7 @@ function SignInFooter() {
             localStorage.setItem('theme', 'light')
             document.documentElement.setAttribute('data-theme', 'light')
         }
-    }, [])
+    }, [theme])
 
     const handleToggle = () => {
         // theme === 'light' ? setThemeColor('dark') : setThemeColor('light')
