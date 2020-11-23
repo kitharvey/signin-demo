@@ -3,15 +3,15 @@ import logo from '../Assets/kidsloop_min_logo.svg'
 import SignInFooter from './SignInFooter'
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from "yup";
+import "yup-phone";
 import GoBack from './GoBack';
 
-function SignUp() {
+const SignUp: React.FC = () => {
 
 
-    const barRef = useRef(null)
-    const formRef = useRef(null)
+    const barRef = useRef<HTMLDivElement>(null)
+    const formRef = useRef<HTMLFormElement>(null)
     const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
-
 
     return (
         <div className='sign-in-background' >
@@ -32,7 +32,9 @@ function SignUp() {
                             name: Yup.string()
                                 .min(2, 'Too Short!')
                                 .required('Required'),
-                            phone: Yup.string().matches(phoneRegExp, 'Invalid phone number').required(),
+                            phone: Yup.string()
+                                .matches(phoneRegExp, 'Invalid phone number')
+                                .required("Required!"),
                             email: Yup.string()
                                 .min(3, 'Too Short!')
                                 .email("Invalid email format")
@@ -42,13 +44,13 @@ function SignUp() {
                             
                         })}
                         onSubmit ={values => {
-                            barRef.current.style.display = 'block'
-                            barRef.current.style.transition = '1s linear width'
-                            barRef.current.style.width = '100%'
+                            barRef.current && (barRef.current.style.display = 'block')
+                            barRef.current && (barRef.current.style.transition = '1s linear width')
+                            barRef.current && (barRef.current.style.width = '100%')
                             console.log('submit')
                             setTimeout(() => {
                                 console.log('submit')
-                                barRef.current.style.display = 'none'
+                                barRef.current && (barRef.current.style.display = 'none')
                                 alert(JSON.stringify(values, null, 2));
                             }, 1000);
                             }}

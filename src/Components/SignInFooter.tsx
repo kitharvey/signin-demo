@@ -4,7 +4,7 @@ import arrow from '../Assets/arrow.svg'
 import arrowWhite from '../Assets/arrow-white.svg'
 import dark from '../Assets/dark.svg'
 
-function SignInFooter() {
+const SignInFooter: React.FC = () => {
     const theme = localStorage.getItem('theme')
     const [themeState, setThemeState] = useState(theme ? theme : 'light')
 
@@ -19,12 +19,11 @@ function SignInFooter() {
     }, [theme])
 
     const handleToggle = () => {
-        // theme === 'light' ? setThemeColor('dark') : setThemeColor('light')
         document.documentElement.getAttribute('data-theme') !== 'dark' ? document.documentElement.setAttribute('data-theme', 'dark') : document.documentElement.setAttribute('data-theme', 'light')
         theme === 'light' ? localStorage.setItem('theme', 'dark') : localStorage.setItem('theme', 'light')
         themeState === 'light' ? setThemeState('dark') : setThemeState('light')
     }
-    const handleChange = (e) => {
+    const handleChange = (e: any) => {
         console.log(e.target.value)
         document.documentElement.setAttribute('lang', e.target.value)
     }

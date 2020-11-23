@@ -10,7 +10,7 @@ import {
   Route, 
 } from 'react-router-dom';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <Router>

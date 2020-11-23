@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 
-function GoBack() {
+const GoBack: React.FC = () => {
     let history = useHistory()
 
     return <div className='go-back' onClick={() => history.goBack()} >Go Back</div>

@@ -54,6 +54,11 @@ a{
     text-align: left;
     cursor: pointer;
     margin-bottom: 20px;
+    transition: all .25s ease;
+
+    &:hover{
+        opacity: .5;
+    }
 }
 
 .sign-in-background{

@@ -5,10 +5,10 @@ import { Formik, Field, Form, ErrorMessage } from 'formik'
 import * as Yup from "yup"
 import GoBack from './GoBack'
 
-function ForgotPassWord() {
+const ForgotPassWord: React.FC = () => {
 
-    const barRef = useRef(null)
-    const formRef = useRef(null)
+    const barRef = useRef<HTMLDivElement>(null)
+    const formRef = useRef<HTMLFormElement>(null)
 
     return (
         <div className='sign-in-background' >
@@ -29,13 +29,13 @@ function ForgotPassWord() {
                             .required("Required!"),
                         })}
                         onSubmit ={values => {
-                            barRef.current.style.display = 'block'
-                            barRef.current.style.transition = '1s linear width'
-                            barRef.current.style.width = '100%'
+                            barRef.current && (barRef.current.style.display = 'block')
+                            barRef.current && (barRef.current.style.transition = '1s linear width')
+                            barRef.current && (barRef.current.style.width = '100%')
                             console.log('submit')
                             setTimeout(() => {
                                 console.log('submit')
-                                barRef.current.style.display = 'none'
+                                barRef.current && (barRef.current.style.display = 'none')
                                 alert(JSON.stringify(values, null, 2));
                             }, 1000);
                             }}
