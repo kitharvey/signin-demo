@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/signin-demo/static/css/main.87ee2895.chunk.css",
+    "main.js": "/signin-demo/static/js/main.87de8bee.chunk.js",
+    "main.js.map": "/signin-demo/static/js/main.87de8bee.chunk.js.map",
+    "runtime-main.js": "/signin-demo/static/js/runtime-main.b2d7a3b0.js",
+    "runtime-main.js.map": "/signin-demo/static/js/runtime-main.b2d7a3b0.js.map",
+    "static/js/2.62f75ba3.chunk.js": "/signin-demo/static/js/2.62f75ba3.chunk.js",
+    "static/js/2.62f75ba3.chunk.js.map": "/signin-demo/static/js/2.62f75ba3.chunk.js.map",
+    "static/js/3.33f1c268.chunk.js": "/signin-demo/static/js/3.33f1c268.chunk.js",
+    "static/js/3.33f1c268.chunk.js.map": "/signin-demo/static/js/3.33f1c268.chunk.js.map",
+    "index.html": "/signin-demo/index.html",
+    "static/css/main.87ee2895.chunk.css.map": "/signin-demo/static/css/main.87ee2895.chunk.css.map",
+    "static/js/2.62f75ba3.chunk.js.LICENSE.txt": "/signin-demo/static/js/2.62f75ba3.chunk.js.LICENSE.txt",
+    "static/media/arrow-white.9df459a8.svg": "/signin-demo/static/media/arrow-white.9df459a8.svg",
+    "static/media/arrow.9d3c1a34.svg": "/signin-demo/static/media/arrow.9d3c1a34.svg",
+    "static/media/dark.3b658720.svg": "/signin-demo/static/media/dark.3b658720.svg",
+    "static/media/kidsloop_min_logo.8a888a62.svg": "/signin-demo/static/media/kidsloop_min_logo.8a888a62.svg",
+    "static/media/light.6917deac.svg": "/signin-demo/static/media/light.6917deac.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b2d7a3b0.js",
+    "static/js/2.62f75ba3.chunk.js",
+    "static/css/main.87ee2895.chunk.css",
+    "static/js/main.87de8bee.chunk.js"
+  ]
+}
